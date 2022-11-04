@@ -1,0 +1,19 @@
+.blob {
+    margin-top: 50px;
+    margin-left: -50px;
+    color: red;
+    font-size: xx-large;
+    height: 500px;
+    width: 500px;
+    background-color: #defff06b;
+    backdrop-filter: blur(5px);
+    clip-path: url(#blobPath);
+    text-shadow: 30px 30px gray;
+}
+
+.monstera {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 400px;
+}

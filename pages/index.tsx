@@ -1,9 +1,10 @@
+import { Blob } from "../components/Blob";
 import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="text-red-900">
+        <div className="relative min-h-screen h-screen">
             <Head>
                 <title>Create Next App</title>
                 <meta
@@ -12,8 +13,26 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div>main</div>
-            <footer className="border-t-2 border-indigo-600">footer</footer>
+
+            <main className="min-h-screen">
+                <Image
+                    className="absolute object-cover h-full w-full top-0 z-0 opacity-50"
+                    width="1000"
+                    height="1000"
+                    alt="image"
+                    src="/abstract-leaf.jpg"
+                />
+                <div className="grid md:grid-cols-2 z-10 relative mx-5">
+                    <div className="min-w-[600px]">
+                        <div className="">
+                            <Blob />
+                        </div>
+                    </div>
+                    <div className="align-middle pt-40 content-center">
+                        second col
+                    </div>
+                </div>
+            </main>
         </div>
     );
 }
